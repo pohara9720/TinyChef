@@ -97,7 +97,7 @@ class App extends Component {
                                             <h3>{this.state.active.caption}</h3>
                                         </div>
                                         <div className='icon-container'>
-                                            <i onClick={() => this.setState({play:true})} class="far fa-play-circle"></i>
+                                            <i onClick={() => this.setState({play:true})} className="far fa-play-circle"></i>
                                         </div>
                                     </div>
                                 </div>
