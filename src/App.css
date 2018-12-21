@@ -294,6 +294,9 @@ button:focus,input:focus{
   .c12 {
     width: 100%;
   }
+  .tile-img{
+      height: 500px;
+  }
   .row {
     flex-wrap: wrap;
   }
