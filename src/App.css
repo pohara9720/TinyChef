@@ -301,3 +301,10 @@ button:focus,input:focus{
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 900px) {
+  .tile-img{
+      height: 200px;
+  }
+
+}
