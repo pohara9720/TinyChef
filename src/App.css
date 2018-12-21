@@ -1,0 +1,300 @@
+html { box-sizing: border-box; padding: 0; }
+*, *:before, *:after { box-sizing: inherit; }
+ol, ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p, ol, ul,div{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:focus,input:focus{
+  outline: none;
+}
+.container{
+    height: 100vh;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c1{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 8.3333%;
+}
+.c2{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 16.67%;
+}
+.c3{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 25%;
+}
+.c4{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 33.3%;
+}
+.c5{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 41.7%;
+}
+.c6{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 50%;
+}
+.c7{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 58%;
+}
+.c8{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 66%;
+}
+.c9{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 75%;
+}
+.c10{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 83%;
+}
+.c11{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 92%;
+}
+.c12{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.video-cover{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*padding-bottom: 10%;*/
+}
+.iframe-container iframe{
+    /*position: absolute;*/
+    /*top: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3498db90;
+    color:white;
+    height: 100%;
+    width: 100%;
+    padding:20px;
+}
+.overlay h1{
+    letter-spacing: 1.3px;
+    font-size: 55px;
+    padding-bottom: 15px;
+}
+.overlay h3{
+    letter-spacing: 1.3px;
+    width: 50%;
+}
+.icon-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container i {
+    font-size: 100px;
+    cursor: pointer;
+}
+.tiles{
+    display: flex;
+    flex-direction: column;
+ /*   align-items: flex-end;*/
+    padding: 10px 5px 0 0;
+    text-align: right;
+    height: 100vh;
+    overflow: auto;
+}
+.intro{
+    padding:40px 25px 0 0;
+}
+.intro h1{
+    opacity: .7;
+    padding: 25px 0;
+}
+.intro h5{
+    color: #666;
+}
+
+.main-avatar{
+    background: url(https://umagazine.ie/uploads/article/2018/5/3695/article_Dua_Lipa.jpg?t=1529495372);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+}
+.tiles-select{
+   flex-wrap: wrap;
+   margin:40px 0;
+}
+.tiles-select h3{
+    margin-left: auto;
+}
+.tile-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tile-img::before{
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background:#3498db90;
+    transform: rotate(0deg);
+    left:-110%;
+    top:90%;
+}
+.tile-img:hover::before{
+    content:'';
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left:-10%;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateY(-50%);
+    margin: 40px 0;
+
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin:10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative; 
+}
+
+.social a i {
+    line-height: 90px;
+    font-size: 24px;
+    transition: 0.2s linear;
+}
+
+.social a:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.social a::before{
+    content:'';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background:#3498db;
+    transform: rotate(45deg);
+    left:-110%;
+    top:90%;
+}
+
+.social a:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left:-10%;
+}
+
+@keyframes aaa {
+    0%{
+      left:-110%;
+      top: 90%;
+    }50%{
+      left:10%;
+      top:-30%;
+    }100%{
+      top:-10%;
+      left:-10%;
+    }
+}
+
+
+@media (max-width: 1199px) {
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5,
+  .c6,
+  .c7,
+  .c8,
+  .c9,
+  .c10,
+  .c11,
+  .c12 {
+    width: 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
