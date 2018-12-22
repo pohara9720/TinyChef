@@ -179,6 +179,7 @@ button:focus,input:focus{
     border-radius: 50%;
     margin-left: auto;
     cursor: pointer;
+    box-shadow: 0 5px 15px -5px #3498db;
 }
 .tiles-select{
    flex-wrap: wrap;
@@ -295,16 +296,30 @@ button:focus,input:focus{
     width: 100%;
   }
   .tile-img{
-      height: 500px;
+      height: 400px;
   }
   .row {
     flex-wrap: wrap;
   }
 }
-
+@media (max-width: 450px) {
+    .tile-img{
+        height: 200px;
+    }
+}
 @media (max-width: 900px) {
-  .tile-img{
-      height: 200px;
+  .container{
+      overflow: auto;
+  }
+  .tiles{
+    overflow: unset;
+  }
+  .overlay h1{
+      font-size: 32px;
+  }
+  .overlay h3{
+      width: 100%;
+      font-size: 15px;
   }
 
 }
