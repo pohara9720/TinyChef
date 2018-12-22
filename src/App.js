@@ -5,6 +5,7 @@ import {Social} from './Components/Social'
 import {TileSelection} from './Components/TileSelection'
 import {PlayVideo} from './Components/PlayVideo'
 import {VideoCover} from './Components/VideoCover'
+import {test} from './Components/content'
 
 
 class App extends Component {
@@ -20,6 +21,10 @@ class App extends Component {
             },
             play:false
         }
+    }
+
+    componentDidMount(){
+        this.setState({active:test[0]})
     }
 
     scrollToTop = () => {
@@ -60,23 +65,11 @@ class App extends Component {
                                 title='Tiny Chef'
                                 info='This is a sample website for daua lipa that displays images in a side bar and videos on the left.'
                             />
-
-                             {/*Social*/}
-                            
-                                <Social />
-                            
-                            {/*Social*/}
-
-                            {/*Tile Selection*/}
-
-                                <TileSelection
-                                    click={(e) => this.selectVideo(e)}
-                                 />
-
-                            {/*Tile Selection*/}
-
-                           
-
+                            <Social />
+                            <TileSelection
+                                tiles={test}
+                                click={(e) => this.selectVideo(e)}
+                             />
                         </div>
                     </div>
                 </div>
