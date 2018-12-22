@@ -62,7 +62,7 @@ class App extends Component {
                     <div className='c3'>
                         <div className='tiles'>
                             <Intro 
-                                title='Tiny Chef'
+                                title='Teensy Tastes'
                                 info='This is a sample website for daua lipa that displays images in a side bar and videos on the left.'
                             />
                             <Social />
